@@ -11,7 +11,7 @@ yarn start
 ```
 
 ## expo 에뮬레이터 실행 
-### Android 에뮬레이터 실행
+### Android 에뮬레이터 및 디바이스 실행
 Run on Android device/emulator
 
 ### iOS 에뮬레이터 실행

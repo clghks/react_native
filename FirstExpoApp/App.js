@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Frist React Native App</Text>
+      <Text>안녕하세요. 리엑트 네이티브</Text>
     </View>
   );
 }
