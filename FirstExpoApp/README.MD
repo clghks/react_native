@@ -7,7 +7,7 @@ expo init FirstExpoApp
 
 ## expo 실행 
 ```
-expo start
+yarn start
 ```
 
 ## expo 에뮬레이터 실행 

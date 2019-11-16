@@ -1,8 +1,11 @@
 # 강의 정보 
 
-양재동 코드랩 
+양재동 코드랩
+
 리엑트 네이티브 한달 완성
+
 https://www.codelabs.kr/codelabs/detail?no=92
+
 
 ## 개발 환경 구성 (Mac)
 
@@ -16,7 +19,7 @@ https://www.codelabs.kr/codelabs/detail?no=92
 brew install yarn
 ```
 
-### expo 설치
+### expo-cli 설치
 ```
 yarn global add expo-cli
 ```
