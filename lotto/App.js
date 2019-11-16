@@ -1,13 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 import _ from 'underscore';
-
-let number = []
-_.times(45, n => number.push(n + 1))    // 45번 반복
-numbers = _.shuffle(number)             // 뒤섞기 
-numbers.length = 6;                     // 6개만 사용 
-numbers = _.sortBy(numbers)           // 정렬
-
 
 // JSX 리엑트 함수형 컴포넌트
 function Ball(props) {
@@ -43,17 +36,31 @@ function Ball(props) {
         <Text style={ textStyle }>{ props.number }</Text>
     </View>
   );
-}
+} 
 
 export default function App() {
+  function updateLottoNumber() {
+    let number = []
+    _.times(45, n => number.push(n + 1))    // 45번 반복
+    numbers = _.shuffle(number)             // 뒤섞기 
+    numbers.length = 6;                     // 6개만 사용 
+    numbers = _.sortBy(numbers)             // 정렬 
+
+    setLottoNumber(numbers)
+  }
+
+  const [ lottoNumber, setLottoNumber ] = React.useState( [0, 0, 0, 0, 0, 0] );
+
   return (
     <View style={styles.container}>
-      <Ball number={ numbers[0] } />
-      <Ball number={ numbers[1] } />
-      <Ball number={ numbers[2] } />
-      <Ball number={ numbers[3] } />
-      <Ball number={ numbers[4] } />
-      <Ball number={ numbers[5] } />
+      <Ball number={ lottoNumber[0] } />
+      <Ball number={ lottoNumber[1] } />
+      <Ball number={ lottoNumber[2] } />
+      <Ball number={ lottoNumber[3] } />
+      <Ball number={ lottoNumber[4] } />
+      <Ball number={ lottoNumber[5] } />
+
+      <Button title='다시 뽑기' onPress={ updateLottoNumber } />
     </View>
   );
 }
