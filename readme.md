@@ -5,6 +5,7 @@
 리엑트 네이티브 한달 완성
 
 https://www.codelabs.kr/codelabs/detail?no=92
+* 참고 GitHub : https://github.com/GrotesQ/Codelab-React-Native-4th
 
 
 ## 개발 환경 구성 (Mac)
